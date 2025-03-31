@@ -12,7 +12,7 @@ const Home = () => {
 				backgroundImage: `url(${bg__image})`,
 			}}
 		>
-			<div className="main__texts mt-35 text-white text-center flex flex-col gap-10">
+			<div className="main__texts pt-35 text-white text-center flex flex-col gap-10">
 				<h1 className="main__title text-6xl uppercase font-bold">Jão</h1>
 				<p className="main__paragraph">
 					Cantor e compositor, é um dos maiores nomes da música pop brasileira

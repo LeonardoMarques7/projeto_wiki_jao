@@ -1,7 +1,19 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import "./Header.css";
 
 const Header = () => {
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsVisible(window.scrollY > 40);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
 	return (
 		<header className="flex justify-between items-center fixed w-full px-10 py-5">
 			<ul className="container__icon">
