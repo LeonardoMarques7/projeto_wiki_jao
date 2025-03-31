@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Main __ app.jsx */
+
+.main__container {
+    padding: 40px;
+}
+

@@ -1,0 +1,9 @@
+/* Home */
+
+.main__paragraph {
+    text-shadow: 5px 1px 5px #cacaca;
+}
+
+.main__container {
+    padding: 40px 0px;
+}

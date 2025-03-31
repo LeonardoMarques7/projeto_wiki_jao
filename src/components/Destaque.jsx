@@ -16,10 +16,10 @@ const Destaque = () => {
 					marca uma nova fase na carreira do artista.
 				</p>
 				<div className="destaque__actions">
-					<button>
+					<button className="destaque-button__play">
 						<FontAwesomeIcon icon={faPlay} /> Ouvir Agora
 					</button>
-					<button>
+					<button className="destaque-button__details">
 						Ver Detalhes <FontAwesomeIcon icon={faChevronRight} />
 					</button>
 				</div>
