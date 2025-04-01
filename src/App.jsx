@@ -10,7 +10,6 @@ import Shows from "./components/Shows";
 function App() {
 	return (
 		<>
-			<Header />
 			<main className="main__container">
 				{/* Home */}
 				<Home />

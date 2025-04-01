@@ -1,0 +1,38 @@
+/* Destaques */
+
+.album__image--container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.album__image--container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: .5s ease-in-out all;
+}
+
+.album__image--container:hover .album__image {
+    transform: rotate(2deg);
+}
+
+.album__image--two {
+    transform: rotate(-2deg);
+    z-index: 1;
+}
+
+.album__image-three {
+    transform: rotate(3deg);
+    z-index: 2;
+}
+
+.album__image {
+    z-index: 3;
+    transform: rotate(-2deg);
+}

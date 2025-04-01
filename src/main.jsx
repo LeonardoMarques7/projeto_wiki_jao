@@ -4,10 +4,12 @@ import "./index.css";
 import App from "./App.jsx";
 import Album from "./pages/Album.jsx";
 import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
 
 const Layout = () => {
 	return (
 		<div>
+			<Header />
 			<Outlet />
 			<Footer />
 		</div>

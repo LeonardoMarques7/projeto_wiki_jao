@@ -38,7 +38,7 @@ const Albuns = (namePath, name, image, data) => {
 						backgroundImage: `url(${image_album_pirata})`,
 					}}
 				>
-					<a href={`${namePath}/${name}`} className="card__link--container">
+					<a href={`${namePath}${name}`} className="card__link--container">
 						<h3 className="card-album--title font-bold">Pirata</h3>
 						<h3 className="card-album--texts">2021</h3>
 					</a>
@@ -49,7 +49,7 @@ const Albuns = (namePath, name, image, data) => {
 						backgroundImage: `url(${image_album_super})`,
 					}}
 				>
-					<a href="#" className="card__link--container">
+					<a href="super" className="card__link--container">
 						<h3 className="card-album--title font-bold">Super</h3>
 						<h3 className="card-album--texts">2023</h3>
 					</a>

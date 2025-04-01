@@ -12,7 +12,8 @@
     }
 }
 
-.title__container--album {
+.title__container--album, .about__title {
+    color: #000;
     font-size: 30px;
     margin: 30px 0px;
     font-weight: bold;
