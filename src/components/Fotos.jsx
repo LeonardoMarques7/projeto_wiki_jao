@@ -14,11 +14,11 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const Fotos = () => {
 	return (
 		<section className="fotos__container mt-10">
-			<div className="max-w-[1400px] m-auto justify-center">
+			<div className="max-w-[1400px] m-auto justify-center container--fotos">
 				<h2 className="title__container--fotos">Galeria de Fotos</h2>
 				<ul className="fotos__list grid grid-cols-4 gap-5">
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-500"
 						style={{
 							backgroundImage: `url(${image_foto})`,
 						}}
@@ -26,7 +26,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-900"
 						style={{
 							backgroundImage: `url(${image_foto2})`,
 						}}
@@ -34,7 +34,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-500"
 						style={{
 							backgroundImage: `url(${image_foto3})`,
 						}}
@@ -42,7 +42,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-900"
 						style={{
 							backgroundImage: `url(${image_foto4})`,
 						}}
@@ -50,7 +50,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-500"
 						style={{
 							backgroundImage: `url(${image_foto5})`,
 						}}
@@ -58,7 +58,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-900"
 						style={{
 							backgroundImage: `url(${image_foto6})`,
 						}}
@@ -66,7 +66,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-500"
 						style={{
 							backgroundImage: `url(${image_foto7})`,
 						}}
@@ -74,7 +74,7 @@ const Fotos = () => {
 						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
 					</li>
 					<li
-						className="fotos__item bg-gray-400"
+						className="fotos__item bg-red-900"
 						style={{
 							backgroundImage: `url(${image_foto8})`,
 						}}

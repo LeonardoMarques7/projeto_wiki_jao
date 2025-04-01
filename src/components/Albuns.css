@@ -1,5 +1,17 @@
 /* Álbuns */
 
+.albuns__container-pm {
+    margin: 40px;
+}
+
+@media (min-width: 1400px) {
+    .albuns__container-pm {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
 .title__container--album {
     font-size: 30px;
     margin: 30px 0px;
@@ -17,14 +29,11 @@
     background-position: center;
     transition: all ease-in-out .5s;
     background-size: cover;
-    background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .card__album:hover {
-    background-repeat: no-repeat;
-    background-position-x: 25px;
-    background-blend-mode: saturation(100%);
+    transform: rotate(2deg);
 }
 
 .card__link--container {

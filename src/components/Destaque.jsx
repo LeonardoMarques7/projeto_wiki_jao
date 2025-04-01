@@ -9,9 +9,9 @@ import "./Destaques.css";
 
 const Destaque = () => {
 	return (
-		<section className="destaque__container flex mt-10 h-svh items-center justify-center max-w-[1400px] m-auto">
-			<div className="destaque__card mx-10 flex flex-col gap-5 max-w-[700px]">
-				<p className="destaque__pill text-yellow-400 font-bold w-[175px] rounded-full px-3 py-1 bg-blue-100">
+		<section className="destaque__container flex mt-10 h-svh items-center justify-between">
+			<div className="destaque__card px-10 flex flex-col gap-5 max-w-[700px]">
+				<p className="destaque__pill text-red-400 font-bold w-[175px] rounded-full px-3 py-1 bg-blue-100">
 					Último Lançamento
 				</p>
 				<h2 className="destaque__title--big text-4xl uppercase font-bold">
@@ -39,7 +39,7 @@ const Destaque = () => {
 					<div className="destaques__duration">42 min</div>
 				</div>
 			</div>
-			<div className="destaque__container--images">
+			<div className="destaque__container--images mx-10">
 				<img src={image_foto} alt="Foto do Jão" className="destaque__image" />
 				<img
 					src={image_foto2}

@@ -7,11 +7,11 @@ import image_album_super from "../assets/album__super.png";
 
 const Albuns = (namePath, name, image, data) => {
 	return (
-		<div className="max-w-[1400px] m-auto">
+		<div className="max-w-[1400px] albuns__container-pm">
 			<h2 className="title__container--album">Álbuns</h2>
 			<ul className="albuns__container flex gap-5 justify-between">
 				<li
-					className="card__album bg-blue-100"
+					className="card__album"
 					style={{
 						backgroundImage: `url(${image_album_lobos})`,
 					}}
@@ -22,7 +22,7 @@ const Albuns = (namePath, name, image, data) => {
 					</a>
 				</li>
 				<li
-					className="card__album bg-red-300"
+					className="card__album"
 					style={{
 						backgroundImage: `url(${image_album_anti_heroi})`,
 					}}
@@ -33,7 +33,7 @@ const Albuns = (namePath, name, image, data) => {
 					</a>
 				</li>
 				<li
-					className="card__album bg-purple-300"
+					className="card__album "
 					style={{
 						backgroundImage: `url(${image_album_pirata})`,
 					}}
@@ -44,7 +44,7 @@ const Albuns = (namePath, name, image, data) => {
 					</a>
 				</li>
 				<li
-					className="card__album bg-cyan-300"
+					className="card__album"
 					style={{
 						backgroundImage: `url(${image_album_super})`,
 					}}

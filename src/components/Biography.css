@@ -1,0 +1,39 @@
+.biography__container {
+    padding: 40px;
+    background-color: rgba(216, 216, 216, 0.336);
+}
+
+@media (min-width: 1400px) {
+    .biography__container--desc {
+        margin: 0 auto;
+    }
+}
+
+.biography__title {
+    font-size: 30px;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+.description__texts--container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__description {
+    display: flex;
+    gap: 40px;
+}
+
+.description__texts {
+    color: #333;
+    font-size: 18px;
+}
+
+.biography__image {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 4px #ff363686;
+}

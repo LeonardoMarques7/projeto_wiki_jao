@@ -1,0 +1,68 @@
+/* Shows */
+
+.shows__container {
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show__card {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.show__data {
+    font-weight: bold;
+    width: 150px;
+}
+
+.show__title {
+    font-weight: 400;
+}
+
+.show__city {
+    font-weight: 300;
+}
+
+.show__action {
+    justify-content: end;
+    align-items: end;
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.show__button--info {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .5s all ease-in-out;
+}
+
+.show__button--buy {
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: black;
+    transition: .5s all ease-in-out;
+}
+
+.show__button--buy:hover {
+    border-color: #3d3d3d;
+    background-color: #3d3d3d;
+}
+
+.show__button--info:hover {
+    background-color: #ccc;
+    border-color: #ccc;
+}
