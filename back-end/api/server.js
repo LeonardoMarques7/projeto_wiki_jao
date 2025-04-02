@@ -13,7 +13,7 @@ const rootDir = path.resolve(__dirname, "..", "..");
 console.log("Diretório raiz:", rootDir); // Deve mostrar ".../Projeto_FullStack"
 
 const app = express();
-const PORT = 3002;
+const PORT = 3000;
 
 app.use(cors());
 
@@ -34,10 +34,10 @@ app.get("/api/shows", async (request, response) => {
 });
 
 // Corrigindo caminho para apontar corretamente para "front-end/dist"
-app.use(express.static(path.join(rootDir, "front-end/dist")));
+app.use(express.static(path.join(rootDir, "front-end/")));
 
 app.get("*", async (request, response) => {
-  response.sendFile(path.join(rootDir, "front-end/dist/index.html"));
+  response.sendFile(path.join(rootDir, "front-end/index.html"));
 });
 
 app.listen(PORT, () => {

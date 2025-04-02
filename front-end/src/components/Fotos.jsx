@@ -23,7 +23,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-900"
@@ -31,7 +31,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto2})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-500"
@@ -39,7 +39,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto3})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-900"
@@ -47,7 +47,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto4})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-500"
@@ -55,7 +55,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto5})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-900"
@@ -63,7 +63,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto6})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-500"
@@ -71,7 +71,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto7})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 					<li
 						className="fotos__item bg-red-900"
@@ -79,7 +79,7 @@ const Fotos = () => {
 							backgroundImage: `url(${image_foto8})`,
 						}}
 					>
-						<FontAwesomeIcon icon={faChevronRight} class="foto__icon" />
+						<FontAwesomeIcon icon={faChevronRight} className="foto__icon" />
 					</li>
 				</ul>
 			</div>

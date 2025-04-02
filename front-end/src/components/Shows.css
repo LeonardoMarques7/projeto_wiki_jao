@@ -7,6 +7,15 @@
     gap: 20px;
 }
 
+@media (min-width: 1400px) {
+    .shows__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
 .show__card {
     border: 1px solid #ccc;
     padding: 15px 20px;
@@ -66,3 +75,4 @@
     background-color: #ccc;
     border-color: #ccc;
 }
+

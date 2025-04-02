@@ -36,3 +36,10 @@
     z-index: 3;
     transform: rotate(-2deg);
 }
+
+@media (min-width: 1400px) {
+    .destaque__container {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

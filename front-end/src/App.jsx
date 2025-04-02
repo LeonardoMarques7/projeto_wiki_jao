@@ -1,31 +1,48 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import { albunsArray } from "./assets/database/Albuns";
+import Album from "./pages/Album";
 import Albuns from "./components/Albuns";
 import Fotos from "./components/Fotos";
-import Destaque from "./components/Destaque";
 import Biography from "./components/Biography";
 import Shows from "./components/Shows";
 
-function App() {
+const Layout = () => {
+	return (
+		<div>
+			<Header />
+			<Outlet />
+			<Footer />
+		</div>
+	);
+};
+
+const App = () => {
 	return (
 		<>
-			<main className="main__container">
-				{/* Home */}
-				<Home />
-				{/* Álbuns */}
-				<Albuns />
-				{/* Galeria de Fotos */}
-				<Fotos />
-				{/* Destaques  */}
-				<Destaque />
-				{/* Biografia */}
-				<Biography />
-				{/* Shows */}
-				<Shows />
-			</main>
+			<BrowserRouter>
+				<Routes>
+					<Route element={<Layout />}>
+						<Route path="/" element={<Home />} />
+						<Route
+							path="/pages/:id"
+							element={<Album itemsArray={albunsArray} />}
+						/>
+						<Route
+							path="/albuns"
+							element={<Albuns itemsArray={albunsArray} />}
+						/>
+						<Route path="/fotos" element={<Fotos />} />
+						<Route path="/biography" element={<Biography />} />
+						<Route path="/shows" element={<Shows />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
 		</>
 	);
-}
+};
 
 export default App;

@@ -1,8 +1,7 @@
 @import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+}
 
 /* Main __ app.jsx */
-
-.main__container {
-    padding: 40px;
-}
 
