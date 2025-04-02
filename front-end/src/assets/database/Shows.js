@@ -30,3 +30,7 @@
 // 		"state": "RS"
 // 	}
 // ]
+
+import { showsArray } from "../../api/api.js";
+
+export { showsArray };

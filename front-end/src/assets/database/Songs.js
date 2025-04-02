@@ -272,3 +272,7 @@
 // 		"duration": "268",
 // 		"artist": "Jão"         }
 // ];
+
+import { songsArray } from "../../api/api.js";
+
+export { songsArray };

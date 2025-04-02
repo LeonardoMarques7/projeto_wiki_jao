@@ -48,3 +48,7 @@
 // 		"genre": ["Pop", "Alternative Pop", "Experimental Pop"]
 // 	}
 // ]
+
+import { albunsArray } from "../../api/api.js";
+
+export { albunsArray };
