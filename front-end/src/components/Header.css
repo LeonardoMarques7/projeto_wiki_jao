@@ -7,18 +7,20 @@ header {
     z-index: 10;
     -webkit-backdrop-filter: blur(13.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    position: sticky;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    position: fixed;
+    max-width: 1270px;
+    border-radius: 10px;
+}
+.container__navbar {
+    display: block;
 }
 
 @media (min-width: 1400px) {
     header {
-        width: 1402px;
-        margin-bottom: 50px;
-        position: sticky;
-        margin: 0 auto;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.589);
+        max-width: 1400px;
     }
 }
 

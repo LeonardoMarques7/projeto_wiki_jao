@@ -5,20 +5,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Header = () => {
-	const [isVisible, setIsVisible] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			setIsVisible(window.scrollY > 40);
-		};
-
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
-
 	return (
-		<header className="flex justify-between items-center top-0 w-full px-10 py-5">
-			<ul className="container__icon">
+		<header className="flex justify-between items-center top-0 w-full px-10 py-5 absolute">
+			<ul className="container__icon ">
 				<li className="container__item">
 					<Link to="/" className="item__link uppercase font-bold text-3xl ">
 						Jão Wiki

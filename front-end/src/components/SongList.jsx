@@ -16,7 +16,7 @@ const SongList = ({ songs }) => {
 	};
 
 	return (
-		<section className="songs_container p-10 mt-[50svh]">
+		<section className="songs_container py-10 max-w-[1400px] m-auto">
 			<h2 className="songs__title">Faixas</h2>
 			<ul className="songs__list flex flex-col">
 				{filteredSongs.length > 0 ? (

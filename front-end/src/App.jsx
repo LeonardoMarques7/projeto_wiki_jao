@@ -13,7 +13,9 @@ import Shows from "./components/Shows";
 const Layout = () => {
 	return (
 		<div>
-			<Header />
+			<span className="flex justify-center">
+				<Header />
+			</span>
 			<Outlet />
 			<Footer />
 		</div>

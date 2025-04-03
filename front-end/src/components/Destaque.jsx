@@ -6,6 +6,7 @@ import image_foto from "../assets/album__super.png";
 import image_foto2 from "../assets/album__pirata.png";
 import image_foto3 from "../assets/album__lobos.jpg";
 import "./Destaques.css";
+import { Link } from "react-router";
 
 const Destaque = () => {
 	return (
@@ -24,12 +25,18 @@ const Destaque = () => {
 					marca uma nova fase na carreira do artista.
 				</p>
 				<div className="destaque__actions flex gap-5">
-					<button className="destaque-button__play bg-black text-white px-5 py-2.5 rounded-md hover:bg-gray-900 duration-300 cursor-pointer">
+					<Link
+						to="https://open.spotify.com/intl-pt/album/66R0BPV3pIJCpOWjAc1MBD?si=1Q4ValC1S0--q8v0GT2p5w"
+						className="destaque-button__play bg-black text-white px-5 py-2.5 rounded-md hover:bg-gray-900 duration-300 cursor-pointer"
+					>
 						<FontAwesomeIcon icon={faPlay} /> Ouvir Agora
-					</button>
-					<button className="destaque-button__details border px-5 py-2.5 rounded-md hover:bg-gray-200 duration-300 cursor-pointer">
+					</Link>
+					<Link
+						to="https://jao.fandom.com/pt-br/wiki/SUPER_(%C3%A1lbum)"
+						className="destaque-button__details border px-5 py-2.5 rounded-md hover:bg-gray-200 duration-300 cursor-pointer"
+					>
 						Ver Detalhes <FontAwesomeIcon icon={faChevronRight} />
-					</button>
+					</Link>
 				</div>
 				<div className="destaque__info flex gap-5">
 					<div className="destaques__likes">

@@ -49,4 +49,16 @@
         flex-direction: column-reverse;
         margin: 10svh auto;
     }
+
+    .destaque__container--images {
+        position: relative;
+        width: 150px;
+        height: 250px;
+        margin-right: auto;
+    }
+
+    .destaque__card {
+        margin-top: 2rem;
+    }
+
 }

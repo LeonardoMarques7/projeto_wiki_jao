@@ -12,8 +12,22 @@
     }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1400px) {
     .songs_container {
         margin-top: 55svh;
+    }
+}
+
+@media (max-width: 1400px) {
+    .songs_container {margin-top: 0rem;}
+
+    .songs__title {
+        font-size: 30px;
+        margin: 15px 0px;
+        font-weight: bold;
+    }
+    
+    .songs_container {
+        padding: 20px;
     }
 }

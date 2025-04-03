@@ -7,12 +7,10 @@ import bg__image from "../assets/banner_1.jpg";
 const Home = () => {
 	return (
 		<>
-			<section
-				className="bg__image flex flex-col text-2xl text-center gap-10 bg-center bg-cover absolute top-0 left-0  right-0 h-[500px]"
-				style={{
-					backgroundImage: `url(${bg__image})`,
-				}}
-			></section>
+			<img
+				className=" flex flex-col text-2xl text-center gap-10 bg-center bg-cover relative top-0 left-0 right-0 object-cover w-full bg__image"
+				src={bg__image}
+			></img>
 		</>
 	);
 };

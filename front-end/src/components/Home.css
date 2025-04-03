@@ -9,4 +9,16 @@
     background: linear-gradient(180deg, #00000086 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-@media (max-width: 1400px) {}
+@media (max-width: 1400px){
+    .bg__image {
+        height: 350px;
+        position: static;
+    }
+}
+
+@media (min-width: 1400px) {
+    .bg__image {
+        height: 500px;
+        position: static;
+    }
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Shows.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo, faTicket } from "@fortawesome/free-solid-svg-icons";
 
 const Shows = () => {
 	return (
@@ -55,8 +57,12 @@ const Shows = () => {
 					<h4 className="show__city">Porto Alegre, RS</h4>
 				</div>
 				<div className="show__action">
-					<button className="show__button--info">Mais informações</button>
-					<button className="show__button--buy">Comprar Ingressos</button>
+					<button className="show__button--info">
+						<FontAwesomeIcon icon={faCircleInfo} /> Mais informações
+					</button>
+					<button className="show__button--buy">
+						<FontAwesomeIcon icon={faTicket} /> Comprar Ingressos
+					</button>
 				</div>
 			</div>
 		</section>

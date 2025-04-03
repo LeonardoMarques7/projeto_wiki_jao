@@ -1,5 +1,7 @@
 /* Destaques */
 
+
+
 .album__image--container {
     position: relative;
     width: 350px;
@@ -60,11 +62,18 @@
         display: none;
     }
 
-    .album__container {
-        position: relative;
-    }
-
     .card__description {
         margin-left: 0px;
+    }
+
+    .about__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .album__container {
+        position: relative;
+        padding: 40px
     }
 }
