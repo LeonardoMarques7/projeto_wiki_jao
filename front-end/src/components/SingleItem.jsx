@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Albuns.css";
+import "./SingleItem.css";
 import "../pages/Album";
 
 const SingleItem = ({ _id, name, release_date, image }) => {
 	return (
-		<li className="card__album" style={{ backgroundImage: `url(${image})` }}>
-			<Link to={`/pages/${_id}`} className="card__link--container">
-				<h3 className="card-album--title font-bold">{name}</h3>
-				<h3 className="card-album--texts">{release_date}</h3>
-			</Link>
-		</li>
+		<Link to={`/pages/${_id}`} className="card__link--container">
+			<li className="card__album" style={{ backgroundImage: `url(${image})` }}>
+				<span className="texts__card">
+					<h3 className="card-album--title font-bold">{name}</h3>
+					<h3 className="card-album--texts">{release_date}</h3>
+				</span>
+			</li>
+		</Link>
 	);
 };
 

@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<>
 			<section
-				className="bg__image flex flex-col text-2xl text-center gap-10 bg-center bg-cover absolute bottom-0 left-0  right-0  h-full mb-70"
+				className="bg__image flex flex-col text-2xl text-center gap-10 bg-center bg-cover absolute top-0 left-0  right-0 h-[500px]"
 				style={{
 					backgroundImage: `url(${bg__image})`,
 				}}

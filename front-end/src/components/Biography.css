@@ -26,14 +26,29 @@
     gap: 40px;
 }
 
+.biography__image {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+    transition: .5s all ease-in-out;
+    box-shadow: 0px 0px 15px 4px #ff363686;
+}
+
+@media (max-width: 1140px) {
+    .container__description {
+        flex-direction: column;
+    }
+
+    .biography__image {
+        max-width: 250px;
+        max-height: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 4px #ff363686;
+    }
+}
+
 .description__texts {
     color: #333;
     font-size: 18px;
 }
 
-.biography__image {
-    max-width: 500px;
-    max-height: 500px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px 4px #ff363686;
-}

@@ -12,12 +12,32 @@ header {
 
 @media (min-width: 1400px) {
     header {
-        width: 1400px;
+        width: 1402px;
         margin-bottom: 50px;
         position: sticky;
         margin: 0 auto;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.589);
+    }
+}
+
+@media (max-width: 740px) {
+    .item__link {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+
+    .text__action {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .actions__header {
+        display: none;
     }
 }

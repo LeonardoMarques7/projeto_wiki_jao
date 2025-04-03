@@ -36,3 +36,35 @@
     z-index: 3;
     transform: rotate(-2deg);
 }
+
+@media (max-width: 1050px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .album__image--container {
+        margin: 20px 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .album__image {
+        transform: rotate(0deg);
+    }
+
+    .album__image--two {
+        display: none;
+    }
+
+    .album__image-three {
+        display: none;
+    }
+
+    .album__container {
+        position: relative;
+    }
+
+    .card__description {
+        margin-left: 0px;
+    }
+}

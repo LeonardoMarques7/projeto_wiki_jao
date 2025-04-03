@@ -14,9 +14,9 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const Fotos = () => {
 	return (
 		<section className="fotos__container mt-10">
-			<div className="max-w-[1400px] m-auto justify-center container--fotos">
+			<div className="max-w-[1400px] m-auto justify-center container--fotos ">
 				<h2 className="title__container--fotos">Galeria de Fotos</h2>
-				<ul className="fotos__list grid grid-cols-4 gap-5">
+				<ul className="fotos__list grid grid-cols-4 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
 					<li
 						className="fotos__item bg-red-500"
 						style={{

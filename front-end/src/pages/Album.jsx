@@ -37,8 +37,8 @@ const Album = () => {
 
 	return (
 		<>
-			<section className="album__container flex flex-col gap-5 pt-25 p-10 bg-blue-100">
-				<div className="actions__link">
+			<section className="album__container flex flex-col gap-5 py-5 p-10 top-0 absolute left-0 right-0 bg-blue-100">
+				<div className="actions__link mt-20">
 					<Link to="/" className="albuns__return">
 						<FontAwesomeIcon icon={faChevronLeft} /> Voltar para todos os álbuns
 					</Link>
@@ -68,9 +68,12 @@ const Album = () => {
 							{album.description}
 						</p>
 						<div className="actions__card flex gap-5">
-							<button className="card-button__play bg-black border-2 rounded-md px-4 py-2 border-black text-white flex items-center gap-3 cursor-pointer hover:bg-gray-900 duration-300 ease-in-out hover:border-gray-900">
+							<Link
+								to={album.play_link}
+								className="card-button__play bg-black border-2 rounded-md px-4 py-2 border-black text-white flex items-center gap-3 cursor-pointer hover:bg-gray-900 duration-300 ease-in-out hover:border-gray-900"
+							>
 								<FontAwesomeIcon icon={faPlay} /> Ouvir Agora
-							</button>
+							</Link>
 							<button className="card-button__share bg-gray-100 border-2 rounded-md px-4 py-2 border-gray-300 flex items-center gap-3 cursor-pointer hover:bg-gray-400 duration-300 ease-in-out hover:border-gray-400">
 								<FontAwesomeIcon icon={faShareNodes} /> Compartilhar
 							</button>

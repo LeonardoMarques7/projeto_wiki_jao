@@ -43,3 +43,10 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 1150px) {
+    .destaque__container {
+        flex-direction: column-reverse;
+        margin: 10svh auto;
+    }
+}

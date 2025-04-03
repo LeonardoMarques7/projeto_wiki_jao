@@ -16,7 +16,7 @@ const SongList = ({ songs }) => {
 	};
 
 	return (
-		<section className="songs_container p-10">
+		<section className="songs_container p-10 mt-[50svh]">
 			<h2 className="songs__title">Faixas</h2>
 			<ul className="songs__list flex flex-col">
 				{filteredSongs.length > 0 ? (

@@ -13,13 +13,13 @@ import { albunsArray } from "../assets/database/Albuns";
 const Main = () => {
 	return (
 		<>
-			<main className="main__container pt-80">
+			<main className="main__container">
 				<section id="home">
 					<Home />
 				</section>
 
 				{/* Álbuns */}
-				<section id="albuns">
+				<section id="albuns" className="scroll-m-25">
 					<Albuns itemsArray={albunsArray} />
 				</section>
 
