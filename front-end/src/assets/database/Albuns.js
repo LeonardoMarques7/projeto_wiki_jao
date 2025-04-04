@@ -49,6 +49,9 @@
 // 	}
 // ]
 
-import { albunsArray } from "../../api/api.js";
+import { loadData } from "../../api/api.js";
 
-export { albunsArray };
+export async function getAlbuns() {
+  const { albunsArray } = await loadData();
+  return albunsArray;
+}

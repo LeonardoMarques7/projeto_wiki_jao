@@ -1,24 +1,17 @@
-import { albunsArray } from "../../src/assets/database/Albuns.js";
-import { songsArray } from "../../src/assets/database/Songs.js";
-import { showsArray } from "../../src/assets/database/Shows.js";
+import { getAlbuns } from "../../src/assets/database/Albuns.js";
+import { getSongs } from "../../src/assets/database/Songs.js";
+import { getShows } from "../../src/assets/database/Shows.js";
 import { db } from "./connect.js";
 
-const newAlbunsArray = albunsArray.map((currentAlbunstObj) => {
-  const newAlbunsObj = { ...currentAlbunstObj };
-  return newAlbunsObj;
-});
+const albunsArray = await getAlbuns();
+const songsArray = await getSongs();
+const showsArray = await getShows();
 
-const newSongsArray = songsArray.map((currentSongObj) => {
-  const newSongObj = { ...currentSongObj };
+const newAlbunsArray = albunsArray.map((currentAlbunstObj) => ({ ...currentAlbunstObj }));
+const newSongsArray = songsArray.map((currentSongObj) => ({ ...currentSongObj }));
+const newShowsArray = showsArray.map((currentShowsObj) => ({ ...currentShowsObj }));
 
-  return newSongObj;
-});
-
-const newShowsArray = showsArray.map((currentShowsObj) => {
-  const newShowsObj = { ...currentShowsObj };
-
-  return newShowsObj;
-});
+// Agora você pode usar os arrays normalmente para popular o DB, etc.
 
 const responseSongs = await db.collection("songs").insertMany(newSongsArray);
 const responseAlbuns = await db

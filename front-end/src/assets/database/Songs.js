@@ -363,6 +363,10 @@
 //     }
 // ];
 
-import { songsArray } from "../../api/api.js";
+// Songs.js
+import { loadData } from "../../api/api.js";
 
-export { songsArray };
+export async function getSongs() {
+  const { songsArray } = await loadData();
+  return songsArray;
+}
