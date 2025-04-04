@@ -7,10 +7,9 @@ import path from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Sobe dois níveis para sair de "back-end" e chegar em "Projeto_FullStack"
 const rootDir = path.resolve(__dirname, "..", ".."); 
 
-console.log("Diretório raiz:", rootDir); // Deve mostrar ".../Projeto_FullStack"
+console.log("Diretório raiz:", rootDir);
 
 const app = express();
 const PORT = 3000;
