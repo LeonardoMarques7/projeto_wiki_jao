@@ -9,7 +9,7 @@ import {
 import SongList from "../components/SongList";
 import Albuns from "../components/Albuns";
 import "./Album.css";
-import { getAlbuns } from "../../src/assets/database/Songs.jsx";
+import { getAlbuns } from "../../src/assets/database/Albuns.jsx";
 import { getSongs } from "../../src/assets/database/Songs.jsx";
 
 const Album = () => {

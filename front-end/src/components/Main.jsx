@@ -8,7 +8,7 @@ import Header from "./Header";
 import Albuns from "./Albuns";
 import Footer from "./Footer";
 import "./Main.css";
-import { getAlbuns } from "../../src/assets/database/Songs.jsx";
+import { getAlbuns } from "../../src/assets/database/Albuns.jsx";
 import { getShows } from "../../src/assets/database/Shows.jsx";
 
 const Main = () => {
