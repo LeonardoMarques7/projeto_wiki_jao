@@ -33,10 +33,10 @@ app.get("/api/shows", async (request, response) => {
 });
 
 // Corrigindo caminho para apontar corretamente para "front-end/dist"
-app.use(express.static(path.join(rootDir, "front-end/")));
+app.use(express.static(path.join(rootDir, "front-end/dist")));
 
 app.get("*", async (request, response) => {
-  response.sendFile(path.join(rootDir, "front-end/index.html"));
+  response.sendFile(path.join(rootDir, "front-end/dist/index.html"));
 });
 
 app.listen(PORT, () => {
