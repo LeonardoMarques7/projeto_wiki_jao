@@ -9,8 +9,8 @@ import {
 import SongList from "../components/SongList";
 import Albuns from "../components/Albuns";
 import "./Album.css";
-import { getAlbuns } from "../../src/assets/database/Albuns.js";
-import { getSongs } from "../../src/assets/database/Songs.js";
+import { getAlbuns } from "../../src/assets/database/Songs.jsx";
+import { getSongs } from "../../src/assets/database/Songs.jsx";
 
 const Album = () => {
 	const { id } = useParams();

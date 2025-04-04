@@ -1,6 +1,6 @@
-import { getAlbuns } from "../../src/assets/database/Albuns.js";
-import { getSongs } from "../../src/assets/database/Songs.js";
-import { getShows } from "../../src/assets/database/Shows.js";
+import { getAlbuns } from "../../src/assets/database/Songs.jsx";
+import { getSongs } from "../../src/assets/database/Songs.jsx";
+import { getShows } from "../../src/assets/database/Shows.jsx";
 import { db } from "./connect.js";
 
 const albunsArray = await getAlbuns();

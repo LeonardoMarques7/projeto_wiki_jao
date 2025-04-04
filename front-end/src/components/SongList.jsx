@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import "./SongList.css";
-import { getSongs } from "../../src/assets/database/Songs.js";
+import { getSongs } from "../../src/assets/database/Songs.jsx";
 import { Link } from "react-router";
 
 const SongList = ({ songs }) => {

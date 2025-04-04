@@ -69,7 +69,7 @@
 // 			"https://open.spotify.com/intl-pt/track/5rsJRsqaigb8Y39kjmGLmG?si=2ccd5a2b9a9748b5",
 // 		"duration": "171",
 //         "album" : "LOBOS",
-// 		"artist": "Jão, Diogo Piçarra"    
+// 		"artist": "Jão, Diogo Piçarra"
 //     },
 // 	{
 // 		"name": "Monstros",
@@ -166,7 +166,7 @@
 // 			"https://open.spotify.com/intl-pt/track/2zLEc4IWwT4GJR20A04tJa?si=2537acf82f1f4160",
 // 		"duration": "189",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Não Te Amo",
@@ -174,7 +174,7 @@
 // 			"https://open.spotify.com/intl-pt/track/4NIOFeptzAsbkOUnyBE6FY?si=22c56d557afc4b2e",
 // 		"duration": "180",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Idiota",
@@ -182,7 +182,7 @@
 // 			"https://open.spotify.com/intl-pt/track/6EDj1nbl9wo6ivGI1t59G4?si=d6387361e5064bef",
 // 		"duration": "181",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Santo",
@@ -190,7 +190,7 @@
 // 			"https://open.spotify.com/intl-pt/track/23n4YuEtkZuALpk0wG3ZMT?si=f14fb254a00a4224",
 // 		"duration": "162",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Acontece",
@@ -198,7 +198,7 @@
 // 			"https://open.spotify.com/intl-pt/track/5wqAUETEzXz6h54rbQ5sfr?si=7505814ea4e241e5",
 // 		"duration": "161",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Você Me Perdeu",
@@ -206,7 +206,7 @@
 // 			"https://open.spotify.com/intl-pt/track/0TZW5WCYDsiVM49lOg4IUP?si=c9b6cd586c4b4b89",
 // 		"duration": "153",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Meninos e Meninas",
@@ -214,7 +214,7 @@
 // 			"https://open.spotify.com/intl-pt/track/5B1skkpiljQOQLAmANiaDa?si=feec9004a4394ba5",
 // 		"duration": "161",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Coringa",
@@ -222,7 +222,7 @@
 // 			"https://open.spotify.com/intl-pt/track/5j3p2WnU8ha4K4ybaTZ4Hx?si=251e8c39297d4c3b",
 // 		"duration": "187",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Doce",
@@ -230,7 +230,7 @@
 // 			"https://open.spotify.com/intl-pt/track/0U2PbvCX6MHp72tqiaCPSS?si=38487f2ea0034df7",
 // 		"duration": "195",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Tempos de Glória",
@@ -238,7 +238,7 @@
 // 			"https://open.spotify.com/intl-pt/track/2lPiQl4lQXFkEYHNuBfYKV?si=ce3ea80359104403",
 // 		"duration": "146",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 // 	{
 // 		"name": "Olhos Vermelhos",
@@ -246,7 +246,7 @@
 // 			"https://open.spotify.com/intl-pt/track/0prJIlExTnyqnpa6JnqrAJ?si=7ca7af9d130f464d",
 // 		"duration": "304",
 //         "album": "PIRATA",
-// 		"artist": "Jão" 
+// 		"artist": "Jão"
 //     },
 
 // 	{
@@ -363,10 +363,10 @@
 //     }
 // ];
 
-// Songs.js
+// Songs.jsx
 import { loadData } from "../../api/api.js";
 
 export async function getSongs() {
-  const { songsArray } = await loadData();
-  return songsArray;
+	const { songsArray } = await loadData();
+	return songsArray;
 }
