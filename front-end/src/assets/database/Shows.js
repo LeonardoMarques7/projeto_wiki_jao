@@ -31,9 +31,6 @@
 // 	}
 // ]
 
-import { loadData } from "../../api/api.js";
+import { showsArray } from "../../../api/api.js";
 
-export async function getShows() {
-  const { showsArray } = await loadData();
-  return showsArray;
-}
+export { showsArray };

@@ -364,9 +364,6 @@
 // ];
 
 // Songs.jsx
-import { loadData } from "../../api/api.js";
 
-export async function getSongs() {
-	const { songsArray } = await loadData();
-	return songsArray;
-}
+import { songsArray } from "../../../api/api.js";
+export { songsArray };

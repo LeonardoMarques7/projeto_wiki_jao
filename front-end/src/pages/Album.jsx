@@ -9,14 +9,14 @@ import {
 import SongList from "../components/SongList";
 import Albuns from "../components/Albuns";
 import "./Album.css";
-import { getAlbuns } from "../../src/assets/database/Albuns.jsx";
-import { getSongs } from "../../src/assets/database/Songs.jsx";
+import { albunsArray } from "../../src/assets/database/Albuns.js";
+import { songsArray } from "../../src/assets/database/Songs.js";
 
 const Album = () => {
 	const { id } = useParams();
-	const album = getAlbuns.find((album) => album._id === id);
+	const album = albunsArray.find((album) => album._id === id);
 
-	const albumSongs = getSongs.filter((song) => song.album === album.name);
+	const albumSongs = songsArray.filter((song) => song.album === album.name);
 
 	if (!album) {
 		return (
@@ -129,7 +129,7 @@ const Album = () => {
 			</section>
 
 			{/* Outros Álbuns */}
-			<Albuns itemsArray={getAlbuns} idDelete={album._id} />
+			<Albuns itemsArray={albunsArray} idDelete={album._id} />
 		</>
 	);
 };
