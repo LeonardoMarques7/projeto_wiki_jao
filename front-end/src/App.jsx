@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import { getAlbuns } from "./assets/database/Songs.jsx";
+import { getAlbuns } from "./assets/database/Albuns.jsx";
 import { getShows } from "./assets/database/Shows.jsx";
 import Album from "./pages/Album";
 import Albuns from "./components/Albuns";
