@@ -5,19 +5,16 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-	faBookOpen,
-	faCamera,
+	faUser,
+	faImage,
 	faCompactDisc,
 	faTicket,
+	faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import chapeu__icon from "../assets/chapeu__icon.png";
 const Header = () => {
 	return (
 		<>
-			<li className="container__item text__home hidden">
-				<Link to="/" className="item__link uppercase font-bold text-3xl">
-					Jão Wiki
-				</Link>
-			</li>
 			<header className="flex justify-between items-center w-full px-10 py-5 fixed ">
 				<ul className="container__icon text__home__hidden--moblie">
 					<li className="container__item">
@@ -48,25 +45,39 @@ const Header = () => {
 						</a>
 					</li>
 				</ul>
-				<ul className="navagation__container--moblie gap-10	">
-					<li className="container__item">
-						<a href="/#albuns" className="item__link">
-							<FontAwesomeIcon icon={faCompactDisc} />
+				<ul className="navagation__container--moblie gap-10">
+					<li className="container__item--moblie">
+						<a href="/#albuns" className="item__link--moblie">
+							<FontAwesomeIcon
+								icon={faCompactDisc}
+								className="item__icon--moblie"
+							/>
+							<span className="text__item--text">Álbuns</span>
 						</a>
 					</li>
-					<li className="container__item">
-						<a href="/#fotos" className="item__link">
-							<FontAwesomeIcon icon={faCamera} />
+					<li className="container__item--moblie">
+						<a href="/#fotos" className="item__link--moblie">
+							<FontAwesomeIcon icon={faImage} className="item__icon--moblie" />
+							<span className="text__item--text">Fotos</span>
 						</a>
 					</li>
-					<li className="container__item">
-						<a href="/#biography" className="item__link">
-							<FontAwesomeIcon icon={faBookOpen} />
+					<li className="item__top">
+						<img src={chapeu__icon} className="image__icon" />
+						<a href="/" className="item__link--moblie item__home">
+							<FontAwesomeIcon icon={faHome} />
+						</a>
+						<span className="text__item--text">Início</span>
+					</li>
+					<li className="container__item--moblie p-6">
+						<a href="/#biography" className="item__link--moblie">
+							<FontAwesomeIcon icon={faUser} className="item__icon--moblie" />
+							<span className="text__item--text">Bio</span>
 						</a>
 					</li>
-					<li className="container__item">
-						<a href="/#shows" className="item__link">
-							<FontAwesomeIcon icon={faTicket} />
+					<li className="container__item--moblie">
+						<a href="/#shows" className="item__link--moblie">
+							<FontAwesomeIcon icon={faTicket} className="item__icon--moblie" />
+							<span className="text__item--text">Shows</span>
 						</a>
 					</li>
 				</ul>
