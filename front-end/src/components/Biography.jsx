@@ -1,6 +1,6 @@
 import React from "react";
 import "./Biography.css";
-import foto from "../assets/Fotos/foto1.png";
+import foto from "../assets/fotos/foto1.png";
 
 const Biography = () => {
 	return (
