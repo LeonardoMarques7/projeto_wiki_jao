@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import "./Songlist.css";
+import "./SongList.css";
 import { songsArray } from "../assets/database/Songs";
 import { albunsArray } from "../assets/database/Albuns";
 import { Link } from "react-router";
