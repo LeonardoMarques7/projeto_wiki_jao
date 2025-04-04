@@ -14,6 +14,11 @@ header {
     max-width: 1270px;
     border-radius: 10px;
 }
+
+.navagation__container--moblie {
+    display: none;
+}
+
 .container__navbar {
     display: block;
 }
@@ -31,6 +36,45 @@ header {
 
     header {
         font-size: 12px;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .text__home__hidden--moblie {
+        display: none;
+    }
+
+    .navagation__container {
+        display: none;
+    }
+
+    .navagation__container--moblie {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        color: #333;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .navagation__container--moblie .container__item {
+        transition: ease-in-out;
+        transition: .5s;
+    }
+
+    .navagation__container--moblie .container__item:hover{
+        color: #39f;
+        scale: 1.2;
+    }
+
+    .text__home {
+        display: flex;
+        background: rgba(255, 255, 255, 0.589);
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .text__action {

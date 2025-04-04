@@ -52,9 +52,10 @@
 
     .destaque__container--images {
         position: relative;
-        width: 150px;
-        height: 250px;
-        margin-right: auto;
+        max-width: 300px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
     }
 
     .destaque__card {

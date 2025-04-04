@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import { albunsArray } from "./assets/database/Albuns";
+import { showsArray } from "./assets/database/Shows";
 import Album from "./pages/Album";
 import Albuns from "./components/Albuns";
 import Fotos from "./components/Fotos";
@@ -39,7 +40,7 @@ const App = () => {
 						/>
 						<Route path="/fotos" element={<Fotos />} />
 						<Route path="/biography" element={<Biography />} />
-						<Route path="/shows" element={<Shows />} />
+						<Route path="/shows" element={<Shows itemsArray={showsArray} />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

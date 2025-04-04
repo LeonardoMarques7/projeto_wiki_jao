@@ -9,6 +9,7 @@ import Albuns from "./Albuns";
 import Footer from "./Footer";
 import "./Main.css";
 import { albunsArray } from "../assets/database/Albuns";
+import { showsArray } from "../assets/database/Shows";
 
 const Main = () => {
 	return (
@@ -40,7 +41,7 @@ const Main = () => {
 
 				{/* Shows */}
 				<section id="shows" className="scroll-m-25">
-					<Shows />
+					<Shows itemsArray={showsArray} />
 				</section>
 			</main>
 		</>
