@@ -1,4 +1,4 @@
-import { getAlbuns } from "../../src/assets/database/Songs.jsx";
+import { getAlbuns } from "../../src/assets/database/Albuns.jsx";
 import { getSongs } from "../../src/assets/database/Songs.jsx";
 import { getShows } from "../../src/assets/database/Shows.jsx";
 import { db } from "./connect.js";
