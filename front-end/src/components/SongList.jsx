@@ -2,12 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import "./SongList.css";
-import { songsArray } from "../assets/database/Songs";
-import { albunsArray } from "../assets/database/Albuns";
+import { getSongs } from "../../src/assets/database/Songs.js";
 import { Link } from "react-router";
 
 const SongList = ({ songs }) => {
-	const filteredSongs = songsArray.filter((song) => song.album === songs);
+	const filteredSongs = getSongs.filter((song) => song.album === songs);
 
 	const formatDuration = (seconds) => {
 		const minutes = Math.floor(seconds / 60);

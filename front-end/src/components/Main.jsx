@@ -8,8 +8,8 @@ import Header from "./Header";
 import Albuns from "./Albuns";
 import Footer from "./Footer";
 import "./Main.css";
-import { albunsArray } from "../assets/database/Albuns";
-import { showsArray } from "../assets/database/Shows";
+import { getAlbuns } from "../../src/assets/database/Albuns.js";
+import { getShows } from "../../src/assets/database/Shows.js";
 
 const Main = () => {
 	return (
@@ -21,7 +21,7 @@ const Main = () => {
 
 				{/* Álbuns */}
 				<section id="albuns" className="scroll-m-25">
-					<Albuns itemsArray={albunsArray} />
+					<Albuns itemsArray={getAlbuns} />
 				</section>
 
 				{/* Galeria de Fotos */}
@@ -41,7 +41,7 @@ const Main = () => {
 
 				{/* Shows */}
 				<section id="shows" className="scroll-m-25">
-					<Shows itemsArray={showsArray} />
+					<Shows itemsArray={getShows} />
 				</section>
 			</main>
 		</>
