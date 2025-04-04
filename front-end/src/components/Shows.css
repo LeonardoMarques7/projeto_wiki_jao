@@ -136,3 +136,13 @@
         width: 100%;
     }
 }
+
+@media (max-width: 450px) {
+    .show__card {
+        width: 100%;
+    }
+
+    .shows__container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
