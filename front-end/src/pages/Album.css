@@ -77,3 +77,14 @@
         padding: 40px
     }
 }
+
+@media (max-width: 600px) {
+    .actions__card {
+        font-size: 12px;
+    }
+
+    .about__container span{
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
