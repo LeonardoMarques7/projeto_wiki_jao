@@ -129,7 +129,7 @@ const Album = () => {
 			</section>
 
 			{/* Outros Álbuns */}
-			<Albuns itemsArray={albunsArray} idDelete={album._id} />
+			<Albuns itemsArray={carregarDadosAlbuns} idDelete={album._id} />
 		</>
 	);
 };

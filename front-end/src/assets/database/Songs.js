@@ -365,5 +365,6 @@
 
 // Songs.jsx
 
-import { songsArray } from "../../../api/api.js";
+import { songsArray, dataPromise } from "../../../api/api.js";
+await dataPromise;
 export { songsArray };

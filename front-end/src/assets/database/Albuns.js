@@ -48,6 +48,6 @@
 // 		"genre": ["Pop", "Alternative Pop", "Experimental Pop"]
 // 	}
 // ]
-import { albunsArray } from "../../../api/api.js";
-
+import { albunsArray, dataPromise } from "../../../api/api.js";
+await dataPromise;
 export { albunsArray };

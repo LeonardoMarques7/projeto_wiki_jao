@@ -1,11 +1,24 @@
+// api.js
 import axios from "axios";
 
-const URL = "https://projeto-wiki-jao.onrender.com/api";
+const URL = "http://localhost:3000/api";
 
-const responseAlbuns = await axios.get(`${URL}/albuns`);
-const responseSongs = await axios.get(`${URL}/songs`);
-const responseShows = await axios.get(`${URL}/shows`);
+export let albunsArray = [];
+export let songsArray = [];
+export let showsArray = [];
 
-export const albunsArray = responseAlbuns.data;
-export const songsArray = responseSongs.data;
-export const showsArray = responseShows.data;
+export const dataPromise = (async () => {
+  try {
+    const [responseAlbuns, responseSongs, responseShows] = await Promise.all([
+      axios.get(`${URL}/albuns`),
+      axios.get(`${URL}/songs`),
+      axios.get(`${URL}/shows`)
+    ]);
+
+    albunsArray = responseAlbuns.data;
+    songsArray = responseSongs.data;
+    showsArray = responseShows.data;
+  } catch (error) {
+    console.error("Erro ao buscar dados da API:", error);
+  }
+})();

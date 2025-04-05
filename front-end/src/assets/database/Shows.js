@@ -31,6 +31,8 @@
 // 	}
 // ]
 
-import { showsArray } from "../../../api/api.js";
-
+import { showsArray, dataPromise } from "../../../api/api.js";
+await dataPromise;
 export { showsArray };
+
+
