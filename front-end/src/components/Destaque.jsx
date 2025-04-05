@@ -1,6 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+	faChevronRight,
+	faInfo,
+	faInfoCircle,
+	faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import image_foto from "../assets/album__super.png";
 import image_foto2 from "../assets/album__pirata.png";
@@ -35,7 +40,7 @@ const Destaque = () => {
 						to="https://jao.fandom.com/pt-br/wiki/SUPER_(%C3%A1lbum)"
 						className="destaque-button__details border px-5 py-2.5 rounded-md hover:bg-gray-200 duration-300 cursor-pointer"
 					>
-						Ver Detalhes <FontAwesomeIcon icon={faChevronRight} />
+						<FontAwesomeIcon icon={faInfoCircle} /> Ver Detalhes
 					</Link>
 				</div>
 				<div className="destaque__info flex gap-5">

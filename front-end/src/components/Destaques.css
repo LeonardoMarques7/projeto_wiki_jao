@@ -63,3 +63,17 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .destaque-button__play, .destaque-button__details{
+        font-size: 14px;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .destaque__actions {
+        flex-direction: column;
+    }
+}
