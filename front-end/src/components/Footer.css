@@ -11,10 +11,26 @@
     footer {
         font-size: 14px;
     }
+
+    .footer__section-links {
+        flex-direction: column;
+        justify-content: start;
+        margin: 0 auto;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer__container {
+        margin: 0 auto;
+    }
+
+    .footer__title {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 750px) {
     .footer__bottom-texts {
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
 }

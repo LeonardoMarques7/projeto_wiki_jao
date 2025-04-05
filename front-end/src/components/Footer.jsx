@@ -5,12 +5,18 @@ const Footer = () => {
 	return (
 		<footer className="footer__container flex flex-col m-10">
 			<div className="footer__section-links flex">
-				<div className="footer__card flex flex-col gap-5 max-w-[700px]">
-					<h2 className="footer__title font-bold uppercase">Jão Wiki</h2>
-					<p className="footer__texts text-gray-600">
-						Entre os versos de Jão, encontramos a lição de que ser quem somos,
-						sem máscaras, é a única maneira de realmente pertencer ao mundo.
-					</p>
+				<div className="footer__card flex flex-col max-w-[700px]">
+					<h2 className="footer__title font-bold uppercase mb-5">Jão Wiki</h2>
+					<code className=" text-gray-600">" Ela entrou nos meus braços</code>
+					<code className="footer__texts text-gray-600">
+						E indicou o caminho
+					</code>
+					<code className="footer__texts text-gray-600">
+						Disse no meu ouvido
+					</code>
+					<code className="footer__texts text-gray-600">
+						Não vai morrer sozinho. "
+					</code>
 				</div>
 				<div className="footer__card mx-10 w-[300px] ">
 					<h2 className="footer__title font-bold">Links Úteis</h2>
