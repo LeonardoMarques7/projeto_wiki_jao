@@ -1,7 +1,7 @@
 // api.js
 import axios from "axios";
 
-const URL = "https://projeto-music.onrender.com/api";
+const URL = "https://projeto-wiki-jao.onrender.com/api";
 
 export let albunsArray = [];
 export let songsArray = [];
