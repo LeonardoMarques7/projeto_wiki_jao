@@ -15,7 +15,7 @@ const Main = () => {
 	return (
 		<>
 			<main className="main__container">
-				<section id="home">
+				<section className="scroll-m-25">
 					<Home />
 				</section>
 

@@ -10,6 +10,7 @@ import Albuns from "./components/Albuns";
 import Fotos from "./components/Fotos";
 import Biography from "./components/Biography";
 import Shows from "./components/Shows";
+import NotFound from "./pages/NotFound";
 
 const Layout = () => {
 	return (
@@ -42,6 +43,7 @@ const App = () => {
 						<Route path="/biography" element={<Biography />} />
 						<Route path="/shows" element={<Shows itemsArray={showsArray} />} />
 					</Route>
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
 		</>

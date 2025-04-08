@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +14,10 @@ import { albunsArray } from "../../src/assets/database/Albuns.js";
 import { songsArray } from "../../src/assets/database/Songs.js";
 
 const Album = () => {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
 	const { id } = useParams();
 	const album = albunsArray.find((album) => album._id === id);
 

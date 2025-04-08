@@ -12,13 +12,23 @@ import {
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
 import chapeu__icon from "../assets/chapeu__icon.png";
+import Main from "./Main";
 const Header = () => {
 	return (
 		<>
 			<header className="flex justify-between items-center w-full px-10 py-5 fixed ">
 				<ul className="container__icon text__home__hidden--moblie">
 					<li className="container__item">
-						<Link to="/" className="item__link uppercase font-bold text-3xl ">
+						<Link
+							to="/"
+							className="item__link uppercase font-bold text-3xl"
+							onClick={(e) => {
+								if (window.location.pathname === "/") {
+									e.preventDefault(); // impede redirecionamento desnecessário
+									window.scrollTo({ top: 0, behavior: "smooth" });
+								}
+							}}
+						>
 							Jão Wiki
 						</Link>
 					</li>
@@ -63,7 +73,16 @@ const Header = () => {
 					</li>
 					<li className="item__top">
 						<img src={chapeu__icon} className="image__icon" />
-						<a href="/" className="item__link--moblie item__home">
+						<a
+							href="/"
+							className="item__link--moblie item__home"
+							onClick={(e) => {
+								if (window.location.pathname === "/") {
+									e.preventDefault();
+									window.scrollTo({ top: 0, behavior: "smooth" });
+								}
+							}}
+						>
 							<FontAwesomeIcon icon={faHome} />
 						</a>
 						<span className="text__item--text">Início</span>
