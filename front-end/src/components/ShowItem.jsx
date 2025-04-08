@@ -1,3 +1,10 @@
+import {
+	faCircleInfo,
+	faInfo,
+	faInfoCircle,
+	faTicket,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const ShowItem = ({ data, location, city, state }) => {
@@ -20,8 +27,13 @@ const ShowItem = ({ data, location, city, state }) => {
 				</div>
 			</span>
 			<div className="show__action">
-				<button className="show__button--info">Mais informações</button>
-				<button className="show__button--buy">Comprar Ingressos</button>
+				<button className="show__button--info flex items-center gap-2">
+					<FontAwesomeIcon icon={faInfo} /> Mais informações
+				</button>
+				<button className="show__button--buy flex items-center gap-2">
+					<FontAwesomeIcon icon={faTicket} />
+					Comprar Ingressos
+				</button>
 			</div>
 		</div>
 	);

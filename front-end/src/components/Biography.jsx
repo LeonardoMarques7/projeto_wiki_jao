@@ -7,8 +7,12 @@ const Biography = () => {
 		<section className="biography__container">
 			<div className="biography__container--desc max-w-[1400px]">
 				<h2 className="biography__title">Biografia</h2>
-				<div className="container__description">
-					<img src={foto} alt="Foto do Jão" className="biography__image" />
+				<div className="container__description relative">
+					<img
+						src={foto}
+						alt="Foto do Jão"
+						className="biography__image sticky top-0"
+					/>
 					<div className="description__texts--container">
 						<p className="description__texts">
 							João Vitor Romania Balbino, conhecido artisticamente como Jão,
